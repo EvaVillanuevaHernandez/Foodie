@@ -23,6 +23,7 @@ export class SingInComponent implements OnInit {
       (data: number) => {
         localStorage.setItem('userName', this.user.name);
         localStorage.setItem('userSurname', this.user.surname);
+        localStorage.setItem('userEmail', this.user.email);
         localStorage.setItem('personalToken', `${data}`);
 
         this.router.navigate(['/menu']).then(() => { window.location.reload(); });

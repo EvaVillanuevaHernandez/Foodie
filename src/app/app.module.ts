@@ -15,6 +15,7 @@ import { ProfileComponent } from './views/profile/profile.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { PostsComponent } from './views/posts/posts.component';
 import { FilterPipe } from './views/pipes/filter.pipe';
+import { SliderComponent } from './slider/slider.component';
 
 
 
@@ -29,7 +30,8 @@ import { FilterPipe } from './views/pipes/filter.pipe';
     ProfileComponent,
     ContactComponent,
     PostsComponent,
-    FilterPipe
+    FilterPipe,
+    SliderComponent
     
    
   ],
