@@ -1,0 +1,179 @@
+.bg {
+    width: 100vw;
+    height: 1000px;
+    background-image: url("src\assets\images\cereza2.png");
+    background-position-x: 30%;
+    background-position-y: center;
+    background-size: cover;
+    background-color: #F2F1EE;
+}
+
+.search{
+    margin-left: 5%;
+    border-radius: 10px;
+    margin-top: 5%;
+    border-color: green;
+    width: 7cm;
+    text-align: left;
+}
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.recomendaciones {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    margin-top: 10%;
+    font-size: large;
+    
+}
+.inspo{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    margin-top: 20%;
+    font-size: large;
+}
+
+.SB {
+    border-radius: 10px;
+    border: 2px solid green;
+    position: center;
+    margin: 0 auto;
+    text-align: left;
+    padding: 5px 55px;
+
+}
+
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 20px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+/*SLIDER*/
+.border-box {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    max-width: 300px;
+    max-height: 100px;
+    position: center;
+    margin-top: 5%;
+    margin-left: 9%;
+    margin-right: 5%;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    margin-top: 15%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(236, 226, 226, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*GRID*/
+.row {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 0 1px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.column img {
+    margin-top: 6%;
+    margin-left: 5%;
+    vertical-align: middle;
+    width: 150px;
+    height: auto;
+    border-radius: 5%;
+
+}
+

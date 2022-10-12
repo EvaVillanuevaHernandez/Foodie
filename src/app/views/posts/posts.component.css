@@ -1,0 +1,18 @@
+
+.bg {
+    width: 100vw;
+    height: 1000px;
+    background-image: url("src\assets\images\cereza.png");
+    background-position-x: 30%;
+    background-position-y: center;
+    background-size: cover;
+    background-color: #F2F1EE; 
+}
+.back{
+    border-style: none;
+    margin-left: 0%;
+    margin-top: 5%;
+}
+.search{
+   text-align: left;
+}

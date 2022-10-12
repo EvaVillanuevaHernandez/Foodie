@@ -1,0 +1,41 @@
+
+
+<div class="bg">
+    <button class="back" routerLink="/welcome"><img src="./../../assets/images/icons/back.png" width="25"
+        height="25"></button>
+
+    <h2 class="center">Inicia sesión</h2>
+    <form (ngSubmit)="submit()" #userForm="ngForm">
+        <div class="form-group">
+            <label for="user">Nombre:</label>
+            <input type="text" [(ngModel)]="user.name" name="name" #name="ngModel" required>
+            <div *ngIf="name.invalid && name.dirty" class="alert">
+                <div *ngIf="name?.errors?.['required']">Campo requerido</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="user">Apellidos:</label>
+            <input type="text" [(ngModel)]="user.surname" surname="surname" #surname="ngModel" required>
+            <div *ngIf="surname.invalid && name.dirty" class="alert">
+                <div *ngIf="surname?.errors?.['required']">Campo requerido</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="user">E-mail:</label>
+            <input type="text" [(ngModel)]="user.email" email="email" #email="ngModel" required>
+            <div *ngIf="email.invalid && email.dirty" class="alert">
+                <div *ngIf="email?.errors?.['required']">Campo requerido</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" [(ngModel)]="user.password" name="password" #password="ngModel" required
+                minlength="4">
+            <div *ngIf="password.invalid && password.dirty" class="alert">
+                <div *ngIf="password?.errors?.['required']">Campo requerido</div>
+                <div *ngIf="password?.errors?.['minlength']">Mínimo 4 caracteres</div>
+            </div>
+        </div>
+        <button class="entrar" type="submit" [disabled]="!userForm .form.valid">Entrar</button>
+    </form>
+</div>

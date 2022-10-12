@@ -1,0 +1,44 @@
+<div class="bg">
+    <button class="back" routerLink="/profile"><img src="./../../assets/images/icons/back.png" width="25"
+        height="25"></button>
+
+    <h3 class="contact">Contacta con nosotros </h3>
+
+    <form (ngSubmit)="submit()" #userForm="ngForm">
+        <div class="form-group">
+            <label for="user">Nombre:</label>
+            <input type="text" [(ngModel)]="user.name" name="name" #name="ngModel" required>
+            <div *ngIf="name.invalid && name.dirty" class="alert">
+                <div *ngIf="name?.errors?.['required']">Campo requerido</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="user">Apellidos:</label>
+            <input type="text" [(ngModel)]="user.surname" surname="surname" #surname="ngModel" required>
+            <div *ngIf="surname.invalid && name.dirty" class="alert">
+                <div *ngIf="surname?.errors?.['required']">Campo requerido</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="user">E-mail:</label>
+            <input type="text" [(ngModel)]="user.email" email="email" #email="ngModel" required>
+            <div *ngIf="email.invalid && email.dirty" class="alert">
+                <div *ngIf="email?.errors?.['required']">Campo requerido</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="user">Cómo podemos ayudarte:</label>
+            <input type="text" [(ngModel)]="user.problem" problem="problem" #problem="ngModel" required>
+            <div *ngIf="problem.invalid && problem.dirty" class="alert">
+                <div *ngIf="problem?.errors?.['required']">Campo requerido</div>
+            </div>
+        </div>
+        <button class="send" type="submit" [disabled]="!userForm .form.valid">Enviar</button>
+       <div class="contacto">
+        <p>Teléfono: +36 678765466</p>
+        <p> Email: foodie@saludable.es</p>
+        <p> Versión 2.2 Foodie</p>
+    </div>
+    </form>
+</div>
+<app-botton-bar></app-botton-bar>

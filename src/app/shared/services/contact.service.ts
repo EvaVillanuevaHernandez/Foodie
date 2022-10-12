@@ -1,0 +1,13 @@
+import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { User } from '../clases/user';
+@Injectable({
+  providedIn: 'root'
+})
+export class ContactService {
+
+  constructor() { }
+  public login(user: User): Observable<number> {
+    return of(Math.random() * (1000 - 0));
+  }
+}

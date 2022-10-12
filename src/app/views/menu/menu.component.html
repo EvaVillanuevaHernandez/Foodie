@@ -1,0 +1,63 @@
+<div class="bg">
+
+  <h2 class="text">¿Qué comemos hoy?</h2>
+
+  <button class="search" routerLink="/posts"> <img  src="./../../assets/images/icons/search.png" width="18" height="18">  Busca un ingrediente...</button>
+
+  <p class="recomendaciones">Recomendaciones</p>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+
+      <img src="../../../assets/images/crema.png" alt="img1" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="../../../assets/images/macarrones.png" alt="img2" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="../../../assets/images/sanwi.png" alt="img3" style="width:100%">
+
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <p class="inspo">Inspírate</p>
+
+  <div class="row">
+    <div class="column">
+      <img src="../../../assets/images/Asiatica.jpg">
+      <img src="../../../assets/images/mexicana.jpg">
+
+
+    </div>
+    <div class="column">
+      <img src="../../../assets/images/vegano.jpg">
+      <img src="../../../assets/images/carne.jpg">
+
+
+    </div>
+
+    <div class="column">
+      <img src="../../../assets/images/lasana-carne.jpg">
+      <img src="../../../assets/images/calabacin.jpg">
+    </div>
+
+  </div>
+  <app-botton-bar></app-botton-bar>
+</div>
